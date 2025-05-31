@@ -1,36 +1,23 @@
 export interface Product {
-  id?: string;
+  id: string;
   name: string;
   category: string;
   description: string;
-  features: string[];
-  image: string;
+  imageUrl: string;
 }
 
 export interface Service {
-  id?: string;
+  id: string;
   title: string;
   description: string;
-  image: string;
+  icon: string;
 }
 
-export interface FAQ {
-  id?: string;
-  question: string;
-  answer: string;
-}
-
-export interface ContactForm {
-  name: string;
+export interface ContactFormData {
+  fullName: string;
   email: string;
   phone: string;
   company?: string;
+  inquiryType: string;
   message: string;
-}
-
-export interface SeoProps {
-  title: string;
-  description: string;
-  keywords?: string;
-  canonical?: string;
 }
